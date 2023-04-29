@@ -7,4 +7,4 @@ and manage 3d city models on top of a relational database.
 
 This repository contains tutorials for GIS related software
 
-![Picture](http://url/to/img.png)
+![Picture](https://github.com/readysetgit24/citygml-docs/4_post_gres-queries.png)
