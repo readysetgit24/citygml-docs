@@ -14,7 +14,8 @@ The pipeline for querying CityGML data was the following:
 The methodology for our querying CityGML is the following: 
 
 ## Set up PostGres, PostGis
-https://www.postgresql.org/download/
+1. Download and install postGRES https://www.postgresql.org/download/
+2. In the stack builder, choose the latest version of PostGIS
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/set_up_post_gres.PNG)
 
