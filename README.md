@@ -12,7 +12,9 @@ The pipeline for querying CityGML data was the following:
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/pipelie_photo.PNG)
 
 The methodology for our querying CityGML is the following: 
-1.  Set up PostGres, PostGis
+
+## Set up PostGres, PostGis
+https://www.postgresql.org/download/
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/set_up_post_gres.PNG)
 
