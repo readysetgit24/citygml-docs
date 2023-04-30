@@ -25,26 +25,27 @@ The methodology for our querying CityGML is the following:
 Download the latest version of the Importer/Exporter tool from here https://github.com/3dcitydb/importer-exporter/releases
 
 
+![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/extension2.PNG)
 
-3. Load any GML Data into 3D City Importer
+## Load any GML Data into 3D City Importer
 
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/load_anycity_gml_data.PNG)
 
 
-4. Validate data
+## Validate data
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/validate_data.PNG)
 
-5. Import data into PostGres
+## Import data into PostGres
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/importing_data_set.PNG)
 
-6. Run queries in PostGres on the data 
+## Run queries in PostGres on the data 
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/run_post_gres_queries.PNG)
 
-7. Analyze Results
+## Analyze Results
 
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/results.PNG)
