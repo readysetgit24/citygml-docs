@@ -9,7 +9,7 @@ This repository contains tutorials for GIS related software. The src folder cont
 
 The pipeline for querying CityGML data was the following: 
 
-![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/pipeline_photo.PNG)
+![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/pipelie_photo.PNG)
 
 The methodology for our querying CityGML is the following: 
 1.  Set up PostGres, PostGis
