@@ -18,11 +18,11 @@ The methodology for our querying CityGML is the following:
 2. In the stack builder, choose the latest version of PostGIS
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/set_up_post_gres.PNG)
-
-
-2. Enable PostGis Extension into database
-
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/extension2.PNG)
+
+
+## Installing Importer/Exporter Tool
+Download the latest version of the Importer/Exporter tool from here https://github.com/3dcitydb/importer-exporter/releases
 
 
 
