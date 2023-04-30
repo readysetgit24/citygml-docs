@@ -37,3 +37,9 @@ The methodology for our querying CityGML is the following:
 6. Run queries in PostGres on the data 
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/run_post_gres_queries.PNG)
+
+7. Analyze Results
+
+
+![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/results.PNG)
+
