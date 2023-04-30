@@ -3,10 +3,13 @@
 Welcome to City GML docs! 
 
 In this project, we bench mark common operations performed on 3D City Database, a 3D geo database to store, represent 
-and manage 3d city models on top of a relational database.
+and manage 3d city models on top of a relational database. Previous works are very meticulous and detailed, so in this repository we aim to show a simple process to querying City GML data. 
 
-This repository contains tutorials for GIS related software
+This repository contains tutorials for GIS related software. The src folder contains the SQL queries written in this project. The data folder contains all the datasets used in this project to run the queries.
 
+The pipeline for querying CityGML data was the following: 
+
+![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/pipeline_photo.PNG)
 
 The methodology for our querying CityGML is the following: 
 1.  Set up PostGres, PostGis
