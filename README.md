@@ -18,7 +18,7 @@ The methodology for our querying CityGML is the following:
 2. In the stack builder, choose the latest version of PostGIS
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/set_up_post_gres.PNG)
-![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/extension2.PNG)
+
 
 
 ## Installing Importer/Exporter Tool
@@ -28,7 +28,7 @@ Download the latest version of the Importer/Exporter tool from here https://gith
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/extension2.PNG)
 
 ## Load any GML Data into 3D City Importer
-
+The data used can be found in the 'data' folder of this repository.
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/load_anycity_gml_data.PNG)
 
