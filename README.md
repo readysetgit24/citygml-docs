@@ -42,7 +42,7 @@ The data used can be found in the 'data' folder of this repository.
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/importing_data_set.PNG)
 
 ## Run queries in PostGres on the data 
-Here the query we are running is selecting all buildings from the dataset that have a height over 50 meters.
+Here the query we are running is selecting all buildings from the dataset that have a height over 50 hectameters.
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/run_post_gres_queries.PNG)
 
 ## Analyze Results
