@@ -25,28 +25,97 @@ The methodology for our querying CityGML is the following:
 Download the latest version of the Importer/Exporter tool from here https://github.com/3dcitydb/importer-exporter/releases
 
 
-![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/extension2.PNG)
 
-## Load any GML Data into 3D City Importer
-The data used can be found in the 'data' folder of this repository.
+## 3D City Database Setup
+1. Open pgAdmin 
+
+2. Select the server of interest and fill the fields as shown in the figure below
+
+3. Create a new database
+4. Enable postGIS in the database by running this command
+
+`CREATE EXTENSION postgis;`
+
+5. Go to the 3D City Importer/Exporter folder. Edit the `CONNECTION_DETAILS.bat` file as shown in the figure below
+
+6. Run the `Create_DB.bat` file and use the following values `SRID: 25833` and  
+`height system: 0`
+
+7. Enter `urn:ogc:def:crs,crs:EPSG:6.12:25833,crs:EPSG:6.12:5783` when asked for the srsName. 
+
+8. Open 3D City Database Importer/Exporter and connect the database 
+
+`**Insert image 10**`
+
+## Download sample data
+
+1. Download CityGML data - http://www.3dcitydb.net/3dcitydb/fileadmin/TUM_Workshop/RTG_Schulungskurs_2016.zip
+
+2. Click on the Import tab to activate the CityGML-Importer window (see the following
+screenshot)
+
+3. Click the Browse button to open a file selection dialog and select the CityGML file to be imported. The CityGML file used in this tutorial is located in the path below:
+“C:\RTG_Schulungskurs_2016\CityGML-Data\ Berlin_CityGML_Lod2.gml”
+
+4. Click on the Just validate button to run the validation process. 
+
+5. After validating, click on "Import" to load the CityGML data to postGRES
+
+## Running Queries 
+
+### PostGRES Sample Query 
+`SELECT * 
+FROM citydb.building 
+WHERE measured_height > 50` 
+
+### PostGIS Sample Queries 
+
+`SELECT * 
+FROM citydb.building 
+WHERE ST_Intersects(building, ST_MakeEnvelope(-74.006, 40.712, -73.992, 40.725, 4326))`
+
+`SELECT ST_Area(geom)/10000 AS hectares FROM bc_municipality
+WHERE name = 'PRINCE GEORGE'`
+
+`SELECT name, ST_Area(geom)/10000 AS hectares FROM bc_municipality ORDER BY hectares DESC LIMIT 1`
+
+
+## Exporting GML 
+
+1. Go to the Export tab
+2. Select Bounding Box 
+3. Click on the map icon 
+4. Search "Strelitzer Straße, Mitte, Berlin, 10115, Germany"
+5. Hold `alt` and drag a box on the map
+6. Click apply 
+7. In the 3Dcity Export tab, click the "Export" button. 
+8. Open the exported GML in FME Data Inspector. 
+
+## Installing FME Data Inspector
+
+
+
+gml srsName - ``
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/load_anycity_gml_data.PNG)
+![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/extension2.PNG)
 
-
-## Validate data
+<!--
+4. Validate data
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/validate_data.PNG)
 
-## Import data into PostGres
+5. Import data into PostGres
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/importing_data_set.PNG)
 
-## Run queries in PostGres on the data 
-Here the query we are running is selecting all buildings from the dataset that have a height over 50 hectameters.
+6. Run queries in PostGres on the data 
+
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/run_post_gres_queries.PNG)
 
-## Analyze Results
+7. Analyze Results
 
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/results.PNG)
 
+-->
