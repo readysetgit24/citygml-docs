@@ -80,19 +80,28 @@ WHERE name = 'PRINCE GEORGE'`
 `SELECT name, ST_Area(geom)/10000 AS hectares FROM bc_municipality ORDER BY hectares DESC LIMIT 1`
 
 
+## Installing FME Data Inspector
+ To view the exported GML files, we need a 3D visualizer. One can request for an academic license of the FME Suite - 
+ https://fme.safe.com/accelerator/
+
 ## Exporting GML 
 
 1. Go to the Export tab
 2. Select Bounding Box 
 3. Click on the map icon 
+
+![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/11_bounding_box.png)
+
 4. Search "Strelitzer Straße, Mitte, Berlin, 10115, Germany"
 5. Hold `alt` and drag a box on the map
+
+![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/12_selecting_area.png)
+
 6. Click apply 
 7. In the 3Dcity Export tab, click the "Export" button. 
 8. Open the exported GML in FME Data Inspector. 
 
-## Installing FME Data Inspector
-
+![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/13_FME_data_inspector.png)
 
 
 gml srsName - ``
@@ -101,7 +110,7 @@ gml srsName - ``
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/extension2.PNG)
 
 <!--
-4. Validate data
+1. Validate data
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/validate_data.PNG)
 
