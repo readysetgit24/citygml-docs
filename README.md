@@ -104,12 +104,15 @@ WHERE name = 'PRINCE GEORGE'`
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/13_FME_data_inspector.png)
 
 
+
+
+<!--
+
 gml srsName - ``
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/load_anycity_gml_data.PNG)
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/extension2.PNG)
 
-<!--
 1. Validate data
 
 ![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/validate_data.PNG)
