@@ -45,7 +45,7 @@ Download the latest version of the Importer/Exporter tool from here https://gith
 
 8. Open 3D City Database Importer/Exporter and connect the database 
 
-![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/10_connection_string.PNG)
+![Picture](https://github.com/readysetgit24/citygml-docs/blob/main/pictures/10_connection_string.png)
 
 ## Download sample data
 
